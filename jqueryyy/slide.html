@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown("slow");
+  });
+});
+</script>
+<style> 
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #ec95ba;
+  border: solid 1px #0e0d0d;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+</style>
+</head>
+<body>
+        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="animatiom.html">animation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="chaining.html">chaining</a>
+                    </li><li class="nav-item">
+                        <a class="nav-link" href="fadein.html">fadein</a>
+                    </li><li class="nav-item">
+                        <a class="nav-link" href="fadeout.html">fadeout</a>
+                    </li><li class="nav-item">
+                            <a class="nav-link" href="fadetoggle.html">fadetoggle</a>
+                        </li><li class="nav-item">
+                        <a class="nav-link" href="slide.html">slide</a>
+                    </li><li class="nav-item">
+                        <a class="nav-link" href="slidetoggle.html">slidetoggle</a>
+                    </li>
+                </ul>
+            </nav>
+ 
+<div id="flip"><h3>slide down panel</h3></div>
+<div id="panel"><h2>Hello friends......</h2></div>
+
+</body>
+</html>

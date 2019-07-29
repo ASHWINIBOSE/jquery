@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").fadeOut();
+    $("#div2").fadeOut("slow");
+    $("#div3").fadeOut(3000);
+  });
+});
+</script>
+</head>
+<body>
+        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="animatiom.html">animation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="chaining.html">chaining</a>
+                    </li><li class="nav-item">
+                        <a class="nav-link" href="fadein.html">fadein</a>
+                    </li><li class="nav-item">
+                        <a class="nav-link" href="fadeout.html">fadeout</a>
+                    </li><li class="nav-item">
+                            <a class="nav-link" href="fadetoggle.html">fadetoggle</a>
+                        </li><li class="nav-item">
+                        <a class="nav-link" href="slide.html">slide</a>
+                    </li><li class="nav-item">
+                        <a class="nav-link" href="slidetoggle.html">slidetoggle</a>
+                    </li>
+                </ul>
+            </nav>
+
+<p><h3>Demonstrate fadeOut()</h3> </p>
+
+<button class="btn btn-info">Click to fade out boxes</button><br><br>
+
+<div id="div1" style="width:80px;height:80px;background-color:gray;"></div><br>
+<div id="div2" style="width:80px;height:80px;background-color:green;"></div><br>
+<div id="div3" style="width:80px;height:80px;background-color:blueviolet;"></div><br>
+
+</body>
+</html>
